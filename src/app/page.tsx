@@ -4,23 +4,8 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 export default function page() {
-  const navproduct = [
-    {
-      title: "Import from Figma",
-    },
-    {
-      title: "Unlock collaboration",
-    },
-    {
-      title: "A brand-new way to design and animate",
-    },
-  ];
+  
 
-  const colors = [
-    "bg-blue-500 h-90 w-70",
-    "bg-[#f1f0f2]",
-    "bg-purple-500 ",
-  ];
 
   const [open, setOpen] = useState(true);
 
@@ -32,16 +17,16 @@ export default function page() {
         </h1>
       </div>
       <div>
-        <div
+        {/* <div
           onMouseLeave={() => setOpen(false)}
-          className="product-page bg-white shadow-2xl h-[95vh] flex items-end rounded-b-3xl absolute transition-all duration-400 w-full ">
+          className="customer-page bg-white shadow-2xl h-[95vh] flex items-end rounded-b-3xl absolute transition-all duration-400 w-full ">
           <div className="w-[55%] flex justify-end">
-            <div className="card-container bg-red-600 pb-5 w-120     flex  gap-4 ">
-              {navproduct.map((item, idx) => (
+            <div className="card-container  p-5  relative  pb-5 w-120     flex  gap-4 ">
+              {navCustomer.map((item, idx) => (
                 <div
-                  className={`card h-42 flex-col ${
+                  className={`card h-0 flex-col ${
                     colors[idx % colors.length]
-                  }  w-60 rounded-xl flex justify-end p-3 gap-1 `}
+                  }  w-0 rounded-xl flex justify-end p-3 gap-1 `}
                   key={idx}>
                   <h1 className="font-bold w-30 text-[15px]">{item.title}</h1>
                   <div className="flex">
@@ -52,24 +37,8 @@ export default function page() {
               ))}
             </div>
           </div>
-
-          <div className="w-[45%] h-[69%] pl-17 flex flex-col gap-5 ">
-            <h1 className="text-xl font-semibold"> What's new</h1>
-            <div className="flex gap-2 flex-col">
-              <p>Pen tool and morph template</p>
-              <p>Faster export</p>
-              <p>Text gradients</p>
-            </div>
-            <button className="bg-[#f1f0f2] font-semibold hover:bg-[#e3e1e7] h-10 w-50 rounded-3xl">
-              see whats new{" "}
-            </button>
-          </div>
-        </div>
+        </div> */}
       </div>
-
-
-
-
     </div>
   );
 }
