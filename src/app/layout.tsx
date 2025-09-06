@@ -1,7 +1,7 @@
 /** @format */
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar2 from "@/components/ui/navbar2";
+// import Navbar2 from "@/components/ui/navbar2";
 // import { FloatingNav } from "@/components/ui/floating-navbar";
 
 import {ShowReel } from "@/components/ui/ShowReel"
@@ -22,7 +22,7 @@ export default function RootLayout({
         {/* <FloatingNav /> */}
 
         <div className="h-[150vh] relative ">
-          <Navbar2 />
+          {/* <Navbar2 /> */}
 
           {children}
 
